@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Achile AIKPE - Développeur Fullstack Senior</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background: #f5f5f5;
+            padding: 20px;
+            font-size: 11pt;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+        }
+        
+        .header h1 {
+            font-size: 24pt;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .header .subtitle {
+            font-size: 12pt;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .contact-info p {
+            margin: 3px 0;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .profile-summary {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        
+        .skills-table {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .skills-table td {
+            padding: 5px 10px 5px 0;
+            vertical-align: top;
+        }
+        
+        .skills-table .label {
+            font-weight: bold;
+            width: 180px;
+            white-space: nowrap;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+        
+        .job-title {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .company-info {
+            font-size: 11pt;
+            margin-bottom: 2px;
+        }
+        
+        .date {
+            font-size: 10pt;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item ul {
+            margin-top: 8px;
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        
+        .experience-item li {
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+        
+        .cert-item {
+            margin-bottom: 8px;
+        }
+        
+        .cert-title {
+            font-weight: bold;
+        }
+        
+        .cert-info {
+            font-size: 10pt;
+            font-style: italic;
+        }
+        
+        .education-degree {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .btn {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #333;
+        }
+        
+        @media print {
+            .buttons { display: none; }
+            .container { 
+                box-shadow: none;
+                padding: 20px;
+            }
+            body { 
+                padding: 0; 
+                background: white; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons no-print">
+        <button class="btn" onclick="window.print()">📄 Exporter en PDF</button>
+        <button class="btn" onclick="downloadWord()">📝 Télécharger Word</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>AIKPE ACHILE</h1>
+            <div class="subtitle">Développeur Fullstack Senior | Node.js | React | Next.js | Python Django| Php Laravel | DevOps</div>
+            <div class="contact-info">
+                <p>Téléphone: +242 05 647 9451 | WhatsApp: +225 05 55 47 5465 | Email: aikpeachille55@gmail.com</p>
+                <p>Adresse: 68 rue Alexandry, Brazzaville, Congo</p>
+                <p>LinkedIn: https://www.linkedin.com/in/achile-aikpe-018654196</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">RÉSUMÉ PROFESSIONNEL</h2>
+            <div class="profile-summary">
+                Développeur Fullstack Senior avec plus de 6 ans d'expérience spécialisé dans la conception et le développement d'applications web, mobile et desktop robustes et évolutives. Expertise approfondie en Node.js, AdonisJS, NestJs, React, Next.js, Python Django Rest, Php Laravel, et technologies DevOps (Docker, VPS). Compétences avérées en architecture Monorepo, méthodologies Agile et TDD, avec capacité démontrée de mentorat technique et de livraison de solutions.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">COMPÉTENCES TECHNIQUES</h2>
+            <table class="skills-table">
+                <tr>
+                    <td class="label">Langages de programmation:</td>
+                    <td>JavaScript, TypeScript, ES6, PHP, Python, C#</td>
+                </tr>
+                <tr>
+                    <td class="label">Front-end:</td>
+                    <td>React, Next.js, React Native, Flutter Material UI, Dotnet Winform</td>
+                </tr>
+                <tr>
+                    <td class="label">Back-end:</td>
+                    <td>Node.js, NestJs, Express.js, AdonisJs, Django Rest Framework, Laravel, Dotnet</td>
+                </tr>
+                <tr>
+                    <td class="label">Bases de données:</td>
+                    <td>MongoDB, MySQL, PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td class="label">DevOps et Infrastructure:</td>
+                    <td>Docker, Configuration VPS, Déploiement d'applications, Mail In Box, CI/CD, Github Actions</td>
+                </tr>
+                <tr>
+                    <td class="label">Méthodologies:</td>
+                    <td>Agile, Scrum, Test-Driven Development (TDD), Architecture Monorepo</td>
+                </tr>
+                <tr>
+                    <td class="label">Outils et versioning:</td>
+                    <td>Git, GitHub, GitLab, Trello, Jira, Microsoft Azure DevOps, Teams</td>
+                </tr>
+                <tr>
+                    <td class="label">API et Documentation:</td>
+                    <td>Swagger, Postman, Insomnia</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">EXPÉRIENCE PROFESSIONNELLE</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">Développeur Fullstack Senior - Node.js, React, Next.js, Django</div>
+                <div class="company-info">AKIENI, Brazzaville, Congo</div>
+                <div class="date">Octobre 2024 - Actuel</div>
+                <ul>
+                    <li>Conception et développement d’un agrégateur de paiement électronique utilisant Node.js, React et AdonisJS</li>
+                    <li>Conception et développement d’une plateforme d’archivage électronique utilisant Python Django REST, React et OpenKM</li>
+                    <li>Conception et développement d’une plateforme d’enrôlement biométrique offline utilisant C# WinForms</li>
+                    <li>Mise en place et maintenance d'architectures Monorepo optimisant la réutilisation des composants sur plusieurs applications, réduisant le temps de développement de 30%</li>
+                    <li>Application stricte de la méthodologie Test-Driven Development (TDD) et des pratiques Agile garantissant la fiabilité et la qualité des livrables</li>
+                    <li>Création et gestion d'images Docker pour le déploiement d'applications sur serveurs VPS</li>
+                    <li>Configuration de serveurs mail professionnels (Mail In Box) et gestion de l'infrastructure DevOps</li>
+                    <li>Rédaction de documentations techniques et fonctionnelles complètes (API, services, architecture)</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Instructeur Fullstack - Node.js et React</div>
+                <div class="company-info">GOMYCODE, Abidjan, Côte d'Ivoire</div>
+                <div class="date">Mars 2022 - Septembre 2024</div>
+                <ul>
+                    <li>Formation et mentorat quotidien de plus de 50 étudiants sur les technologies Fullstack Node.js et React</li>
+                    <li>Organisation d'ateliers techniques et validation des points de contrôle des projets étudiants</li>
+                    <li>Pilotage des entretiens d'évaluation quotidiens et accompagnement personnalisé des apprenants</li>
+                    <li>Développement de supports pédagogiques et de projets pratiques alignés avec les standards de l'industrie</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Développeur Fullstack - React et Next.js (Freelance)</div>
+                <div class="company-info">CANAFRAN, Paris, France</div>
+                <div class="date">Novembre 2022 - Août 2024</div>
+                <ul>
+                    <li>Développement d'APIs RESTful performantes et de webservices pour applications client-serveur</li>
+                    <li>Intégration de services tiers (API externes, systèmes de paiement, authentification OAuth)</li>
+                    <li>Maintenance évolutive et corrective des applications existantes avec amélioration continue des performances</li>
+                    <li>Rédaction de documentations techniques et fonctionnelles pour faciliter la maintenance et l'évolution</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Développeur Fullstack - PHP et Laravel</div>
+                <div class="company-info">Agence des Monts, Nautilus Technology, Cotonou, Bénin</div>
+                <div class="date">Décembre 2019 - Octobre 2021</div>
+                <ul>
+                    <li>Développement d'APIs RESTful et d'applications web embarquées sous Laravel</li>
+                    <li>Création de librairies Node.js et Laravel pour la consommation de ressources API SOAP du service monétique GIM-UEMOA</li>
+                    <li>Intégration de systèmes de paiement électronique et gestion des transactions sécurisées</li>
+                    <li>Collaboration avec les équipes métier pour la définition des spécifications techniques</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">FORMATION</h2>
+            
+            <div class="education-item">
+                <div class="education-degree">Master 1 en Sciences Informatiques et Télécommunications</div>
+                <div class="company-info">Académie des Sciences Techniques et du Commerce, Abidjan, Côte d'Ivoire</div>
+                <div class="date">2021 - 2022</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-degree">Licence Professionnelle en Informatique Appliquée</div>
+                <div class="company-info">École Supérieure de Gestion et de Technologie, Cotonou, Bénin</div>
+                <div class="date">2019 - 2020</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-degree">Baccalauréat de l'Enseignement Général - Série C (Sciences)</div>
+                <div class="company-info">Lycée Moderne 1 Gagnoa, Gagnoa, Côte d'Ivoire</div>
+                <div class="date">2015 - 2016</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">CERTIFICATIONS PROFESSIONNELLES</h2>
+            
+            <div class="cert-item">
+                <div class="cert-title">Advanced React, Programming with JavaScript & React Native</div>
+                <div class="cert-info">Meta - Mars 2025</div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-title">Developing Front-End Apps with React</div>
+                <div class="cert-info">IBM - Février 2025</div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-title">Software Engineering</div>
+                <div class="cert-info">Coursera - Février 2025</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">LANGUES</h2>
+            <table class="skills-table">
+                <tr>
+                    <td class="label">Français:</td>
+                    <td>Langue maternelle - Courant</td>
+                </tr>
+                <tr>
+                    <td class="label">Anglais:</td>
+                    <td>Professionnel - Lecture, écriture et conversation</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function downloadWord() {
+            const header = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+                <head>
+                    <meta charset='utf-8'>
+                    <title>CV - Achile AIKPE</title>
+                    <style>
+                        body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; }
+                        h1 { font-size: 24pt; text-align: center; }
+                        h2 { font-size: 14pt; border-bottom: 1px solid black; }
+                        table { width: 100%; border-collapse: collapse; }
+                        td { padding: 5px; }
+                    </style>
+                </head><body>`;
+            const footer = '</body></html>';
+            const sourceHTML = header + document.querySelector('.container').innerHTML + footer;
+            
+            const blob = new Blob(['\ufeff', sourceHTML], {
+                type: 'application/msword'
+            });
+            
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'CV_AIKPE_Achile_ATS_Optimized.doc';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
