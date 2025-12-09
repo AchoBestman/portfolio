@@ -837,7 +837,7 @@
             <div class="education-item">
                 <div class="education-degree" data-en="General Baccalaureate, Series C" data-fr="Baccalauréat Général Série C">General Baccalaureate, Series C</div>
                 <div class="education-school" data-en="Modern High School 1 Gagnoa" data-fr="Lycée Moderne 1 Gagnoa">Modern High School 1 Gagnoa</div>
-                <div class="education-year" data-en="July 2016" data-fr="Juillet 2016">Côte d'Ivoire, Gagnoa - July 2016</div>
+                <div class="education-year" data-en="Côte d'Ivoire, Gagnoa - July 2016" data-fr="Côte d'Ivoire, Gagnoa - Juillet 2016">Côte d'Ivoire, Gagnoa - July 2016</div>
             </div>
         </div>
     </section>
@@ -1102,6 +1102,12 @@
             addText(isFrench ? 'Licence professionnelle en Système informatique et logiciel' : 'Professional Bachelor\'s Degree in Computer Systems and Software', leftMargin, rightMargin - leftMargin, 10);
             doc.setFont('helvetica', 'normal');
             addText(isFrench ? 'École Supérieure de Gestion et de Technologie, Cotonou, Bénin - Septembre 2020' : 'Higher School of Management and Technology, Cotonou, Bénin - September 2020', leftMargin, rightMargin - leftMargin, 9);
+            
+            y += 2;
+            doc.setFont('helvetica', 'bold');
+            addText(isFrench ? 'Baccalauréat Général Série C' : 'General Baccalaureate, Series C', leftMargin, rightMargin - leftMargin, 10);
+            doc.setFont('helvetica', 'normal');
+            addText(isFrench ? 'Lycée Moderne 1 Gagnoa, Abidjan, Côte d\'Ivoire - Juillet 2016' : 'Modern High School 1 Gagnoa, Abidjan, Côte d\'Ivoire - July 2016', leftMargin, rightMargin - leftMargin, 9);
             
             // Certifications
             if (y < 230) {
